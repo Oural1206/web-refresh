@@ -3,8 +3,11 @@
   "description": "Web extension to refresh your web page with interval and focus function.",
   "version": "0.1",
   "manifest_version": 3
+  "permissions": ["storage"]
   "background": {
     "service_worker": "background.js"
   }
-  "permissions": ["storage"]
+  "action": {
+    "default_popup": "popup.html"
+  }
 }
