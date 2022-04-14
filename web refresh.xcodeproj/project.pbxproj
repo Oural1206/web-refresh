@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		96EA77CF2808861D002173BF /* web_refresh.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 96EA77CE2808861D002173BF /* web_refresh.entitlements */; };
+		96EA77D12808861D002173BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EA77D02808861D002173BF /* AppDelegate.swift */; };
+		96EA77D42808861D002173BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96EA77D22808861D002173BF /* Main.storyboard */; };
+		96EA77D62808861D002173BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EA77D52808861D002173BF /* ViewController.swift */; };
+		96EA77D82808861E002173BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96EA77D72808861E002173BF /* Assets.xcassets */; };
+		96EA77DF2808861E002173BF /* web refresh Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 96EA77DE2808861E002173BF /* web refresh Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		96EA77E42808861E002173BF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96EA77E32808861E002173BF /* Cocoa.framework */; };
+		96EA77E72808861E002173BF /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EA77E62808861E002173BF /* SafariExtensionHandler.swift */; };
+		96EA77E92808861E002173BF /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EA77E82808861E002173BF /* SafariExtensionViewController.swift */; };
+		96EA77EC2808861E002173BF /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96EA77EA2808861E002173BF /* SafariExtensionViewController.xib */; };
+		96EA77EF2808861E002173BF /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 96EA77EE2808861E002173BF /* script.js */; };
+		96EA77F12808861E002173BF /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 96EA77F02808861E002173BF /* ToolbarItemIcon.pdf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		96EA77E02808861E002173BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96EA77C32808861D002173BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96EA77DD2808861E002173BF;
+			remoteInfo = "web refresh Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		96EA77F82808861E002173BF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				96EA77DF2808861E002173BF /* web refresh Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		96EA77CB2808861D002173BF /* web refresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "web refresh.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96EA77CE2808861D002173BF /* web_refresh.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = web_refresh.entitlements; sourceTree = "<group>"; };
+		96EA77D02808861D002173BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		96EA77D32808861D002173BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		96EA77D52808861D002173BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		96EA77D72808861E002173BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96EA77D92808861E002173BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96EA77DE2808861E002173BF /* web refresh Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "web refresh Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96EA77E32808861E002173BF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		96EA77E62808861E002173BF /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		96EA77E82808861E002173BF /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		96EA77EB2808861E002173BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		96EA77ED2808861E002173BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96EA77EE2808861E002173BF /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		96EA77F02808861E002173BF /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		96EA77F22808861E002173BF /* web_refresh_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = web_refresh_Extension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96EA77C82808861D002173BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96EA77DB2808861E002173BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96EA77E42808861E002173BF /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		96EA77C22808861D002173BF = {
+			isa = PBXGroup;
+			children = (
+				96EA77CD2808861D002173BF /* web refresh */,
+				96EA77E52808861E002173BF /* web refresh Extension */,
+				96EA77E22808861E002173BF /* Frameworks */,
+				96EA77CC2808861D002173BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96EA77CC2808861D002173BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96EA77CB2808861D002173BF /* web refresh.app */,
+				96EA77DE2808861E002173BF /* web refresh Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96EA77CD2808861D002173BF /* web refresh */ = {
+			isa = PBXGroup;
+			children = (
+				96EA77CE2808861D002173BF /* web_refresh.entitlements */,
+				96EA77D02808861D002173BF /* AppDelegate.swift */,
+				96EA77D22808861D002173BF /* Main.storyboard */,
+				96EA77D52808861D002173BF /* ViewController.swift */,
+				96EA77D72808861E002173BF /* Assets.xcassets */,
+				96EA77D92808861E002173BF /* Info.plist */,
+			);
+			path = "web refresh";
+			sourceTree = "<group>";
+		};
+		96EA77E22808861E002173BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96EA77E32808861E002173BF /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96EA77E52808861E002173BF /* web refresh Extension */ = {
+			isa = PBXGroup;
+			children = (
+				96EA77E62808861E002173BF /* SafariExtensionHandler.swift */,
+				96EA77E82808861E002173BF /* SafariExtensionViewController.swift */,
+				96EA77EA2808861E002173BF /* SafariExtensionViewController.xib */,
+				96EA77ED2808861E002173BF /* Info.plist */,
+				96EA77EE2808861E002173BF /* script.js */,
+				96EA77F02808861E002173BF /* ToolbarItemIcon.pdf */,
+				96EA77F22808861E002173BF /* web_refresh_Extension.entitlements */,
+			);
+			path = "web refresh Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96EA77CA2808861D002173BF /* web refresh */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96EA77F92808861E002173BF /* Build configuration list for PBXNativeTarget "web refresh" */;
+			buildPhases = (
+				96EA77C72808861D002173BF /* Sources */,
+				96EA77C82808861D002173BF /* Frameworks */,
+				96EA77C92808861D002173BF /* Resources */,
+				96EA77F82808861E002173BF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96EA77E12808861E002173BF /* PBXTargetDependency */,
+			);
+			name = "web refresh";
+			productName = "web refresh";
+			productReference = 96EA77CB2808861D002173BF /* web refresh.app */;
+			productType = "com.apple.product-type.application";
+		};
+		96EA77DD2808861E002173BF /* web refresh Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96EA77F52808861E002173BF /* Build configuration list for PBXNativeTarget "web refresh Extension" */;
+			buildPhases = (
+				96EA77DA2808861E002173BF /* Sources */,
+				96EA77DB2808861E002173BF /* Frameworks */,
+				96EA77DC2808861E002173BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "web refresh Extension";
+			productName = "web refresh Extension";
+			productReference = 96EA77DE2808861E002173BF /* web refresh Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96EA77C32808861D002173BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = Oural_1206;
+				TargetAttributes = {
+					96EA77CA2808861D002173BF = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					96EA77DD2808861E002173BF = {
+						CreatedOnToolsVersion = 11.7;
+					};
+				};
+			};
+			buildConfigurationList = 96EA77C62808861D002173BF /* Build configuration list for PBXProject "web refresh" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96EA77C22808861D002173BF;
+			productRefGroup = 96EA77CC2808861D002173BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96EA77CA2808861D002173BF /* web refresh */,
+				96EA77DD2808861E002173BF /* web refresh Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96EA77C92808861D002173BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96EA77CF2808861D002173BF /* web_refresh.entitlements in Resources */,
+				96EA77D82808861E002173BF /* Assets.xcassets in Resources */,
+				96EA77D42808861D002173BF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96EA77DC2808861E002173BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96EA77F12808861E002173BF /* ToolbarItemIcon.pdf in Resources */,
+				96EA77EC2808861E002173BF /* SafariExtensionViewController.xib in Resources */,
+				96EA77EF2808861E002173BF /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96EA77C72808861D002173BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96EA77D62808861D002173BF /* ViewController.swift in Sources */,
+				96EA77D12808861D002173BF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96EA77DA2808861E002173BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96EA77E92808861E002173BF /* SafariExtensionViewController.swift in Sources */,
+				96EA77E72808861E002173BF /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96EA77E12808861E002173BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96EA77DD2808861E002173BF /* web refresh Extension */;
+			targetProxy = 96EA77E02808861E002173BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		96EA77D22808861D002173BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96EA77D32808861D002173BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		96EA77EA2808861E002173BF /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96EA77EB2808861E002173BF /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96EA77F32808861E002173BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		96EA77F42808861E002173BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		96EA77F62808861E002173BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "web refresh Extension/web_refresh_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "web refresh Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "oural.techgoo.web-refresh-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		96EA77F72808861E002173BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "web refresh Extension/web_refresh_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "web refresh Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "oural.techgoo.web-refresh-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		96EA77FA2808861E002173BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "web refresh/web_refresh.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "web refresh/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "oural.techgoo.web-refresh";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		96EA77FB2808861E002173BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "web refresh/web_refresh.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "web refresh/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "oural.techgoo.web-refresh";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96EA77C62808861D002173BF /* Build configuration list for PBXProject "web refresh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96EA77F32808861E002173BF /* Debug */,
+				96EA77F42808861E002173BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96EA77F52808861E002173BF /* Build configuration list for PBXNativeTarget "web refresh Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96EA77F62808861E002173BF /* Debug */,
+				96EA77F72808861E002173BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96EA77F92808861E002173BF /* Build configuration list for PBXNativeTarget "web refresh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96EA77FA2808861E002173BF /* Debug */,
+				96EA77FB2808861E002173BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96EA77C32808861D002173BF /* Project object */;
+}
