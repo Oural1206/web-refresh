@@ -1,5 +1,7 @@
 # ♾ web-refresh
-⚠️ PROJECT STOPED ⚠️
+
+### ⚠️ PROJECT STOPED ⚠️
+*you can use this <a href="https://github.com/Oural1206/web-refresh/blob/main/base.js">javascript</a> in the meantime*
 
 ### 🎖 License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
