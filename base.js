@@ -7,5 +7,5 @@ function refresh() {
  }
 
  document.addEventListener('DOMContentLoaded', function(){
-     const start = setTimeout(refresh, 100)
+     const start = setTimeout(refresh, 1000)
  });
