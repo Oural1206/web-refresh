@@ -16,18 +16,6 @@ function startRefresh() {
     });
 }
 
-document.addEventListener("visibilitychange", function() {
-    chrome.storage.local.get(["focus"], function(result) {
-        if (result.active) {
-            if (document.visibilityState == "visible") {
-                chrome.storage.local.set({active: true})
-            } else if (document.visibilityState == "hidden") {
-                chrome.storage.local.set({active: false})
-            }
-        }
-    });
-})
-
 chrome.storage.onChanged.addListener(function (changes) {
     const changedItems = Object.keys(changes);
     if (find(changedItems, "active")) {
